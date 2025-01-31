@@ -12,18 +12,18 @@ const Footer = () => {
           {/* Left Section */}
           <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col">
             {/* Logo */}
-            <h2 className="text-5xl font-sans font-semibold mb-6">Plunge</h2>
+            <h2 className="text-6xl font-sans font-semibold mb-6">Plunge</h2>
 
             {/* App Store Buttons */}
             <div className="flex gap-4 mb-8">
-              <a href="#" className="w-36 hover:opacity-90 transition-opacity">
+              <a href="#" className="w-40 hover:opacity-90 transition-opacity">
                 <img 
                   src="/src/assets/googleplay.png" 
                   alt="Get it on Google Play" 
                   className="w-full"
                 />
               </a>
-              <a href="#" className="w-36 hover:opacity-90 transition-opacity">
+              <a href="#" className="w-40 hover:opacity-90 transition-opacity">
                 <img 
                   src="/src/assets/appstore.png" 
                   alt="Download on the App Store" 
@@ -34,15 +34,13 @@ const Footer = () => {
             </div>
 
             {/* Map */}
-            <div className="h-64 mb-1 rounded-lg overflow-hidden">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0337987946007!2d77.2821237!3d28.5492577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMyJzU3LjMiTiA3N8KwMTYnNTUuNiJF!5e0!3m2!1sen!2sin!4v1635134073610!5m2!1sen!2sin" 
-                width="100%" 
+            <div className="h-72 mb-1 overflow-hidden">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53222.05504797422!2d77.08552068483678!3d28.703631509973352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03d5b0619f3f%3A0x2208402cf282fb02!2sPitampura%2C%20Delhi!5e1!3m2!1sen!2sin!4v1738324980603!5m2!1sen!2sin" 
                 height="100%" 
+                width="95%"
                 style={{ border: 0 }} 
                 allowFullScreen 
-                loading="lazy"
-              ></iframe>
+                loading="lazy"></iframe>
             </div>
 
             {/* Copyright */}

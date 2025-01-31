@@ -1,32 +1,42 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        'plunge-purple': '#7E319B',
-        'plunge-purple-dark': '#5E2574',
-        'plunge-purple-light': '#9B4FB8',
-        'plunge-yellow': '#F9F871',
-        'plunge-white': '#FFFFFF',
-        'plunge-gray': {
-          100: '#F7F7F7',
-          200: '#E5E5E5',
-          300: '#D4D4D4',
-          400: '#A3A3A3',
-          500: '#737373',
-        }
+        plunge: {
+          purple: '#7E319B',
+          'purple-dark': '#161018',
+          'purple-gray': '#84758A',
+          yellow: '#DFE742',
+          white: '#FFFFFF',
+        },
       },
       fontFamily: {
-        'display': ['Playfair Display', 'serif'],
-        'sans': ['Inter', 'sans-serif'],
+        sans: ['Inter var', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
       },
-      fontWeight: {
-        'extra-bold': '800',
+      backgroundImage: {
+        'wave-pattern': "url('/src/assets/wave.svg')",
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' }
+        },
+        'scroll-reverse': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' }
+        }
+      },
+      animation: {
+        scroll: 'scroll 25s linear infinite',
+        'scroll-reverse': 'scroll-reverse 18s linear infinite'
       }
     },
   },
   plugins: [],
-} 
+}

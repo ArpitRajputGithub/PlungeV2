@@ -229,22 +229,14 @@ const Home = () => {
           <div className="text-center max-w-4xl mx-auto mb-32">
             <div className="relative inline-block">
               <h2 className="text-[#161024] font-display text-6xl font-bold relative">
-                <span className="block mb-4">WHAT WE</span>
+                <span className="block mb-6">WHAT WE</span>
                 <div className="relative inline-block">
                   {/* Yellow blob background */}
-                  <div className="absolute -inset-4 -bottom-6 bg-[#F9F871] rounded-[40px] transform -rotate-6 origin-left"></div>
+                  <div className="absolute -inset-4 -bottom-6 bg-[#F9F871] rounded-[50px] transform -rotate-6 origin-left"></div>
                   {/* Text */}
                   <div className="relative flex items-center justify-center -rotate-6">
-                    <span className="relative z-10 -ml-1 text-plunge-purple ">DO</span>
+                    <span className="relative z-10 ml-1 text-plunge-purple ">DO</span>
                     <span className="relative z-10 text-plunge-purple">?</span>
-                  </div>
-                  {/* Emoji */}
-                  <div className="absolute -right-11 -top-5 z-20">
-                    <img
-                      src="/src/assets/sun2.png"
-                      alt="Smiley"
-                      className="w-12 h-12"
-                    />
                   </div>
                 </div>
               </h2>
@@ -273,7 +265,7 @@ const Home = () => {
                 <div className="absolute top-0 left-0 right-0 transform -rotate-6 hover:rotate-0 transition-transform duration-300">
                   <div className="bg-white p-4 shadow-lg rounded-sm">
                     <img
-                      src="/src/assets/friends1.jpg"
+                      src="/src/assets/friends1.png"
                       alt="Friends enjoying outdoors"
                       className="w-full h-64 object-cover rounded-sm"
                     />
@@ -282,7 +274,7 @@ const Home = () => {
                 <div className="absolute top-80 left-0 right-0 transform rotate-6 hover:rotate-0 transition-transform duration-300">
                   <div className="bg-white p-4 shadow-lg rounded-sm">
                     <img
-                      src="/src/assets/friends2.jpg"
+                      src="/src/assets/friends2.png"
                       alt="Friends hanging out"
                       className="w-full h-64 object-cover rounded-sm"
                     />
@@ -315,7 +307,7 @@ const Home = () => {
       {/* How it Works Section */}
       <section className="bg-white relative min-h-screen flex flex-col font-sans">
         {/* Section Title - Moved outside the purple background */}
-        <div className="text-center py-8 ">
+        <div className="text-center py-16">
           <h2 className="text-[#161024] font-display text-6xl font-bold">
             How it works?
           </h2>
@@ -446,16 +438,16 @@ const Home = () => {
       </section>
 
       {/* CTA Sections */}
-      <section className="overflow-hidden mb-20 mt-20 py-40 bg-white">
+      <section className="overflow-hidden mb-40 mt-40 py-40 bg-white">
         {/* First CTA - Right to Left */}
         <div className="relative w-screen -ml-[50vw] left-1/2">
-          <div className="absolute inset-0 bg-[#F9F871] transform -rotate-6 origin-left"></div>
+          <div className="absolute -inset-3 bg-[#F9F871] transform -rotate-6 origin-left"></div>
           <div className="relative transform -rotate-6 origin-left">
-            <div className="animate-marquee-rtl whitespace-nowrap">
-              <p className="text-plunge-purple text-5xl font-display font-extrabold py-12 inline-block">
-                Nobody deserves to be alone, Plunge has your back &nbsp;&nbsp;&nbsp;
-                Nobody deserves to be alone, Plunge has your back &nbsp;&nbsp;&nbsp;
-                Nobody deserves to be alone, Plunge has your back &nbsp;&nbsp;&nbsp;
+            <div className="animate-[scroll_10s_linear_infinite] whitespace-nowrap  min-w-full flex-shrink-0">
+              <p className="text-plunge-purple text-6xl font-display font-extrabold py-10 inline-block">
+                Nobody deserves to be alone, Plunge has your back &nbsp;&nbsp;
+                Nobody deserves to be alone, Plunge has your back &nbsp;&nbsp;
+                Nobody deserves to be alone, Plunge has your back &nbsp;&nbsp;
               </p>
             </div>
           </div>
@@ -463,13 +455,14 @@ const Home = () => {
 
         {/* Second CTA - Left to Right */}
         <div className="relative w-screen -ml-[50vw] left-1/2 mt-0">
-          <div className="absolute inset-0 bg-[#F9F871] transform rotate-6 origin-left"></div>
+          <div className="absolute -inset-3 bg-[#F9F871] transform rotate-6 origin-left"></div>
           <div className="relative transform rotate-6 origin-left">
-            <div className="animate-marquee-ltr whitespace-nowrap">
-              <p className="text-plunge-purple text-5xl font-display font-extrabold py-12 inline-block">
-                Download the plunge app now! &nbsp;&nbsp;&nbsp;
-                Download the plunge app now! &nbsp;&nbsp;&nbsp;
-                Download the plunge app now! &nbsp;&nbsp;&nbsp;
+            <div className="animate-[scroll-reverse_10s_linear_infinite] whitespace-nowrap">
+              <p className="text-plunge-purple text-6xl font-display font-extrabold py-10 inline-block">
+                Download the plunge app now! &nbsp;&nbsp;
+                Download the plunge app now! &nbsp;&nbsp;
+                Download the plunge app now! &nbsp;&nbsp;
+                Download the plunge app now! &nbsp;&nbsp;
               </p>
             </div>
           </div>
