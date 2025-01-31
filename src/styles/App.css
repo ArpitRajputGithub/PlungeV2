@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+}
+
+/* Animations */
+@keyframes rotate {
+  from { 
+    transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate {
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+.animate-twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+/* Marquee Animations */
+@keyframes marquee-rtl {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee-ltr {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-marquee-rtl {
+  animation: marquee-rtl 20s linear infinite;
+}
+
+.animate-marquee-ltr {
+  animation: marquee-ltr 20s linear infinite;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #5E2574;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7E319B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F9F871;
+}
+
+/* Utility classes */
+.text-stroke {
+  -webkit-text-stroke: 2px #F9F871;
+  text-stroke: 2px #F9F871;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-plunge-yellow text-plunge-purple px-8 py-3 rounded-full font-bold
+         hover:bg-plunge-white transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply bg-plunge-white text-plunge-purple px-8 py-3 rounded-full font-bold
+         hover:bg-plunge-yellow transition-all duration-300 transform hover:scale-105;
+}
+
+/* App-specific styles */
+.wave-clip {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+/* Mobile menu backdrop */
+.mobile-menu-backdrop {
+  backdrop-filter: blur(4px);
+  background-color: rgba(22, 16, 24, 0.8);
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+} 
