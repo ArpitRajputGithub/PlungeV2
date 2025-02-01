@@ -24,7 +24,7 @@ import sunglasses from '../assets/sunglasses.png';
 
 // Star component with random animation delay
 const Star = ({ className = "", color = "yellow" }) => {
-  const delay = Math.random() * 2; // Random delay between 0-2s
+  const delay = Math.random() * 2; 
   return (
     <svg
       className={`${className} animate-twinkle`}
