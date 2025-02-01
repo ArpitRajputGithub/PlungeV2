@@ -1,5 +1,26 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import chillout from '../assets/chillout.png';
+import hello from '../assets/hello.png';
+import friends1 from '../assets/friends1.png';
+import friends2 from '../assets/friends2.png';
+import joined1 from '../assets/joined1.png';
+import joined1L from '../assets/joined1L.png';
+import joined2 from '../assets/joined2.png';
+import joined3 from '../assets/joined3.png';
+import joined3R from '../assets/joined3R.png';
+import joined5 from '../assets/joined5.png';
+import mockup2 from '../assets/mockup2.png';
+import mockup3 from '../assets/mockup3.png';
+import mockup4 from '../assets/mockup4.png';
+import mockup5 from '../assets/mockup5.png';
+import phoneMockup from '../assets/phone-mockup.png';
+import sunEmoji from '../assets/sun-emoji.png';
+import sun2 from '../assets/sun2.png';
+import sunglasses from '../assets/sunglasses.png';
+
+
+
 
 // Star component with random animation delay
 const Star = ({ className = "", color = "yellow" }) => {
@@ -16,13 +37,13 @@ const Star = ({ className = "", color = "yellow" }) => {
   );
 };
 
-// Add this interface and array before the Home component
+
 interface WireframeContent {
   image: string;
   title: string;
   joinedImage?: string;
   joinedSecond?: string;
-  // Manual positioning for first joined image
+
   joinedStyles?: {
     width?: string;
     height?: string;
@@ -31,7 +52,7 @@ interface WireframeContent {
     right?: string;
     bottom?: string;
   };
-  // Manual positioning for second joined image
+
   joinedSecondStyles?: {
     width?: string;
     height?: string;
@@ -44,15 +65,15 @@ interface WireframeContent {
 
 const wireframes: WireframeContent[] = [
   {
-    image: '/src/assets/phone-mockup.png',
+    image: phoneMockup,
     title: 'Discover exciting activities around you',
-    joinedImage: '/src/assets/joined1.png',
+    joinedImage: joined1,
     joinedStyles: {
       width: '20rem',
       top: '50%',
       left: '15rem'
     },
-    joinedSecond: '/src/assets/joined1L.png',
+    joinedSecond: joined1L,
     joinedSecondStyles: {
       width: '16rem',
       top: '8rem',
@@ -60,9 +81,9 @@ const wireframes: WireframeContent[] = [
     }
   },
   {
-    image: '/src/assets/mockup2.png',
+    image: mockup2,
     title: 'Discover and Engage Through Your Feed!',
-    joinedImage: '/src/assets/joined2.png',
+    joinedImage: joined2,
     joinedStyles: {
       width: '20rem',
       top: '50%',
@@ -70,15 +91,15 @@ const wireframes: WireframeContent[] = [
     },
   },
   {
-    image: '/src/assets/mockup3.png',
+    image: mockup3,
     title: 'Organize and track your activities',
-    joinedImage: '/src/assets/joined3.png',
+    joinedImage: joined3,
     joinedStyles: {
       width: '20rem',
       top: '60%',
       right: '-20rem'
     },
-    joinedSecond: '/src/assets/joined3R.png',
+    joinedSecond: joined3R,
     joinedSecondStyles: {
       width: '10rem',
       top: '19rem',
@@ -86,15 +107,15 @@ const wireframes: WireframeContent[] = [
     }
   },
   {
-    image: '/src/assets/mockup4.png',
+    image: mockup4,
     title: 'Join and manage activities easily',
-   
-    
+
+
   },
   {
-    image: '/src/assets/mockup5.png',
+    image: mockup5,
     title: 'Connect and communicate with your friends',
-    joinedImage: '/src/assets/joined5.png',
+    joinedImage: joined5,
     joinedStyles: {
       width: '20rem',
       top: '30%',
@@ -141,7 +162,7 @@ const Home = () => {
                     {/* Sun Emoji */}
                     <div className="absolute -left-40 -top-12">
                       <img
-                        src="/src/assets/sun-emoji.png"
+                        src= {sunEmoji}
                         alt="Sun"
                         className="w-32 h-32 animate-rotate"
                       />
@@ -156,7 +177,7 @@ const Home = () => {
                   </div>
                   <div className="flex items-center justify-center relative ml-20">
                     <img
-                      src="/src/assets/sunglasses.png"
+                      src={sunglasses} 
                       alt="Sunglasses"
                       className="w-20 h-20 mr-4"
                     />
@@ -166,7 +187,7 @@ const Home = () => {
                       {/* Positioned Chillout under Anything */}
                       <div className="absolute top-full right-0 mt-8">
                         <img
-                          src="/src/assets/chillout.png"
+                          src={chillout}
                           alt="Chill Out"
                           className="w-44 transform rotate-6 animate-float"
                         />
@@ -179,7 +200,7 @@ const Home = () => {
               {/* Decorative Elements */}
               <div className="absolute right-32 -top-10">
                 <img
-                  src="/src/assets/hello.png"
+                  src={hello}
                   alt="Hello"
                   className="w-40 animate-float"
                 />
@@ -197,7 +218,7 @@ const Home = () => {
                 <div className="absolute right-30 top-80 bottom-50">
                   <Star className="w-8 h-8" />
                 </div>
-                
+
 
                 {/* Orange Stars - Only 2 */}
                 <div className="absolute -right-20 top-40">
@@ -238,6 +259,13 @@ const Home = () => {
                     <span className="relative z-10 ml-1 text-plunge-purple ">DO</span>
                     <span className="relative z-10 text-plunge-purple">?</span>
                   </div>
+                  <div className="absolute -right-11 -top-7 z-20">
+                    <img
+                      src= {sun2}
+                      alt="Smiley"
+                      className="w-12 h-12"
+                    />
+                  </div>
                 </div>
               </h2>
             </div>
@@ -249,14 +277,6 @@ const Home = () => {
 
           {/* Our Approach Card */}
           <div className="relative max-w-6xl mx-auto">
-            {/* Sun Emoji Badge */}
-            <div className="absolute -right-9 -top-12 z-20">
-              <img
-                src="/src/assets/sun-emoji.png"
-                alt="Smiley"
-                className="w-32 h-32 animate-float"
-              />
-            </div>
 
             {/* Main Card */}
             <div className="bg-[#F9F871] rounded-[40px] p-12 flex flex-col md:flex-row gap-12">
@@ -265,7 +285,7 @@ const Home = () => {
                 <div className="absolute top-0 left-0 right-0 transform -rotate-6 hover:rotate-0 transition-transform duration-300">
                   <div className="bg-white p-4 shadow-lg rounded-sm">
                     <img
-                      src="/src/assets/friends1.png"
+                      src= {friends1}
                       alt="Friends enjoying outdoors"
                       className="w-full h-64 object-cover rounded-sm"
                     />
@@ -274,7 +294,7 @@ const Home = () => {
                 <div className="absolute top-80 left-0 right-0 transform rotate-6 hover:rotate-0 transition-transform duration-300">
                   <div className="bg-white p-4 shadow-lg rounded-sm">
                     <img
-                      src="/src/assets/friends2.png"
+                      src= {friends2}
                       alt="Friends hanging out"
                       className="w-full h-64 object-cover rounded-sm"
                     />
@@ -306,7 +326,7 @@ const Home = () => {
 
       {/* How it Works Section */}
       <section className="bg-white relative min-h-screen flex flex-col font-sans">
-        {/* Section Title - Moved outside the purple background */}
+        {/* Section Title */}
         <div className="text-center py-16">
           <h2 className="text-[#161024] font-display text-6xl font-bold">
             How it works?
@@ -339,7 +359,7 @@ const Home = () => {
                       initial={{ opacity: 0, x: 100 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -100 }}
-                      transition={{ 
+                      transition={{
                         duration: 0.5,
                         ease: "easeInOut"
                       }}
@@ -398,13 +418,13 @@ const Home = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -20 }}
-                      transition={{ 
+                      transition={{
                         duration: 0.5,
                         ease: "easeInOut"
                       }}
                       className="space-y-4"
                     >
-                      <motion.h3 
+                      <motion.h3
                         className="text-plunge-purple text-5xl font-sans font-semibold leading-tight"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -424,11 +444,10 @@ const Home = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentWireframe(index)}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    index === currentWireframe 
-                      ? 'w-6 bg-plunge-purple' 
-                      : 'w-1.5 bg-plunge-purple opacity-50 hover:opacity-75'
-                  }`}
+                  className={`h-1.5 rounded-full transition-all duration-300 ${index === currentWireframe
+                    ? 'w-6 bg-plunge-purple'
+                    : 'w-1.5 bg-plunge-purple opacity-50 hover:opacity-75'
+                    }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}

@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom';
+import googleplay from '../../assets/googleplay.png';
+import appstore from '../../assets/appstore.png';
+
+
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -16,16 +20,16 @@ const Footer = () => {
 
             {/* App Store Buttons */}
             <div className="flex gap-4 mb-8">
-              <a href="#" className="w-40 hover:opacity-90 transition-opacity">
+              <a href="#" className="w-[16rem] hover:opacity-90 transition-opacity">
                 <img 
-                  src="/src/assets/googleplay.png" 
+                  src= {googleplay}
                   alt="Get it on Google Play" 
                   className="w-full"
                 />
               </a>
-              <a href="#" className="w-40 hover:opacity-90 transition-opacity">
+              <a href="#" className="w-[16rem] hover:opacity-90 transition-opacity">
                 <img 
-                  src="/src/assets/appstore.png" 
+                  src= {appstore}
                   alt="Download on the App Store" 
                   className="w-full"
                 />
