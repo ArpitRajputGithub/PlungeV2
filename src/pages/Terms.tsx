@@ -3,7 +3,7 @@ import React from 'react';
 const TermsAndConditions: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#030203] font-sans leading-relaxed">
-      <header className="bg-[#DFE742] text-white py-4 px-8 text-center">
+      <header className="bg-[#5E2574] text-white py-8 px-8 text-center">
         <h1 className="text-3xl font-bold">Terms and Conditions</h1>
       </header>
 
