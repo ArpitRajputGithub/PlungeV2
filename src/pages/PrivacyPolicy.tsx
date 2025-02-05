@@ -3,11 +3,12 @@ import React from 'react';
 const PrivacyPolicy: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#030203]">
-      <header className="bg-[#5E2574] text-white py-8 px-8 text-center">
-        <h1 className="text-3xl font-bold">Privacy Policy</h1>
+      <header className="bg-[#5E2574] text-white py-16 lg:py-8 text-center">
+        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Privacy Policy</h1>
       </header>
 
-      <main className="p-8 bg-white mx-auto my-8 max-w-4xl rounded-lg shadow-md">
+
+      <main className="p-8 bg-white mx-auto lg:my-10 max-w-4xl lg:rounded-lg shadow-md">
         <section className="mb-8">
           <p className="mb-4">
             This Privacy Notice for Plunge Technologies Pvt Ltd ("we," "us," or "our") describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:

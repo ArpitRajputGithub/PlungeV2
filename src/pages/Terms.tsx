@@ -2,12 +2,12 @@ import React from 'react';
 
 const TermsAndConditions: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#030203] font-sans leading-relaxed">
-      <header className="bg-[#5E2574] text-white py-8 px-8 text-center">
-        <h1 className="text-3xl font-bold">Terms and Conditions</h1>
+    <div className="min-h-screen bg-[#030203]">
+      <header className="bg-[#5E2574] text-white py-16 lg:py-8 text-center">
+        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Terms and Conditions</h1>
       </header>
 
-      <main className="p-8 bg-white mx-auto my-8 max-w-4xl rounded-lg shadow-md">
+      <main className="p-8 bg-white mx-auto lg:my-10 max-w-4xl lg:rounded-lg shadow-md">
         <section>
           <h2 className="text-2xl font-bold mb-4">Agreement to Our Legal Terms</h2>
           <p className="mb-4">We are Plunge Technologies Pvt Ltd ('Company', 'we', 'us', 'Plunge' or 'our'). We operate the website <a href="https://www.plunge.one" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://www.plunge.one</a> (the 'Site'), the mobile application Plunge - Find friends for anything (the 'App'), as well as any other related products and services that refer or link to these legal terms (the 'Legal Terms') (collectively, the 'Services').</p>

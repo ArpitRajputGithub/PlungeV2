@@ -220,11 +220,11 @@ const Home = () => {
                 </div>
 
                 {/* Orange Stars */}
-                <div className="absolute -right-4 sm:-right-4 md:-right-8 lg:-right-12 xl:-right-16 top-8 sm:top-16 md:top-20 lg:top-28 xl:top-36">
-                  <Star className="w-3 h-3 sm:w-2 sm:h-2 md:w-4 md:h-4 lg:w-8 lg:h-8 xl:w-10 xl:h-10" color="orange" />
+                <div className="absolute right-4 sm:-right-4 md:-right-8 lg:-right-12 xl:right-10 top-14 sm:top-14 md:top-20 lg:top-28 xl:top-22">
+                  <Star className="w-5 h-5 sm:w-2 sm:h-2 md:w-4 md:h-4 lg:w-8 lg:h-8 xl:w-10 xl:h-10" color="orange" />
                 </div>
-                <div className="absolute -left-4 sm:-left-12 md:-left-16 lg:-left-20 xl:-left-2 
-                bottom-8 sm:bottom-24 md:bottom-32 lg:bottom-40 xl:bottom-32">
+                <div className="absolute -left-0 sm:-left-12 md:-left-16 lg:-left-20 xl:left-36 
+                bottom-8 sm:bottom-24 md:bottom-32 lg:bottom-40 xl:-bottom-12">
                   <Star className="w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10" color="orange" />
                 </div>
               </div>
@@ -262,7 +262,7 @@ const Home = () => {
                     <span className="relative z-10 ml-1 text-plunge-purple">DO</span>
                     <span className="relative z-10 text-plunge-purple">?</span>
                   </div>
-                  <div className="absolute -right-4 sm:-right-10 md:-right-11 -top-3 sm:-top-6 md:-top-7 z-20">
+                  <div className="absolute -right-6 sm:-right-10 md:-right-11 -top-5 sm:-top-8 md:-top-7 z-20">
                     <img
                       src={sun2}
                       alt="Smiley"
@@ -305,7 +305,7 @@ const Home = () => {
               </div>
 
               {/* Right Side - Text Content */}
-              <div className="w-full md:w-1/2 pt-4 sm:pt-6 md:pt-8">
+              <div className="w-full md:w-1/2 pt-4 sm:pt-6 md:pt-8 text-center md:text-left">
                 <h2 className="text-[#161024] font-display text-[32px] sm:text-4xl md:text-6xl font-bold mb-6 sm:mb-8 md:mb-12">
                   OUR APPROACH
                 </h2>
@@ -321,6 +321,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -359,7 +360,7 @@ const Home = () => {
                 </svg>
               </div>
 
-              <div className="phone-frame relative w-[75%] sm:w-[60%] md:w-[18rem] lg:w-[16rem] xl:w-[18rem] 
+              <div className="phone-frame relative w-[100%] sm:w-[60%] md:w-[18rem] lg:w-[16rem] xl:w-[18rem] 
                 md:ml-12 lg:ml-16 xl:ml-20 md:-top-4 lg:-top-5 xl:-top-16 
                 md:left-[16rem] lg:left-[18rem] xl:left-[20rem]">
                 <AnimatePresence mode="wait">
@@ -463,7 +464,7 @@ const Home = () => {
           </div>
 
           {/* Navigation Dots */}
-          <div className="flex justify-center md:justify-end gap-2 mt-4 md:mt-0 md:absolute md:bottom-8 md:right-8 pb-8 md:pb-0">
+          <div className="hidden md:flex justify-center md:justify-end gap-2 mt-4 md:mt-0 md:absolute md:bottom-8 md:right-8 pb-8 md:pb-0">
             {wireframes.map((_, index) => (
               <button
                 key={index}
@@ -476,6 +477,7 @@ const Home = () => {
               />
             ))}
           </div>
+
         </div>
         {/* </div> */}
       </section>
