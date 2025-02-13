@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import "./styles/App.css";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const App: React.FC = () => {
   return (
