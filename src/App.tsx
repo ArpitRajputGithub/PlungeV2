@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import "./styles/App.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
           </Routes>
         </main>
         <Footer />
+        <Analytics />
       </div>
     </Router>
   );

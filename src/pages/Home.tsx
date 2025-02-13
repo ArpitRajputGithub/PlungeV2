@@ -4,17 +4,17 @@ import chillout from '../assets/chillout.png';
 import hello from '../assets/hello.png';
 import friends1 from '../assets/friends1.png';
 import friends2 from '../assets/friends2.png';
-import joined1 from '../assets/joined1.png';
-import joined1L from '../assets/joined1L.png';
-import joined2 from '../assets/joined2.png';
-import joined3 from '../assets/joined3.png';
-import joined3R from '../assets/joined3R.png';
-import joined5 from '../assets/joined5.png';
-import mockup2 from '../assets/mockup2.png';
-import mockup3 from '../assets/mockup3.png';
-import mockup4 from '../assets/mockup4.png';
-import mockup5 from '../assets/mockup5.png';
-import phoneMockup from '../assets/phone-mockup.png';
+import joined1 from '../assets/joined1.webp';
+import joined1L from '../assets/joined1L.webp';
+import joined2 from '../assets/joined2.webp';
+import joined3 from '../assets/joined3.webp';
+import joined3R from '../assets/joined3R.webp';
+import joined5 from '../assets/joined5.webp';
+import mockup2 from '../assets/mockup2.webp';
+import mockup3 from '../assets/mockup3.webp';
+import mockup4 from '../assets/mockup4.webp';
+import mockup5 from '../assets/mockup5.webp';
+import phoneMockup from '../assets/phone-mockup.webp';
 import sunEmoji from '../assets/sun-emoji.png';
 import sun2 from '../assets/sun2.png';
 import sunglasses from '../assets/sunglasses.png';
@@ -160,11 +160,11 @@ const Home = () => {
                 <div className="flex flex-col items-center w-full">
                   <div className="flex items-center justify-center mb-2 sm:mb-6 relative ml-0 sm:-ml-12 md:-ml-20 w-full">
                     {/* Sun Emoji */}
-                    <div className="absolute left-6 sm:-left-24 md:-left-40 lg:left-36 -top-4 sm:-top-8 md:-top-12 lg:-top-16">
+                    <div className="absolute left-5 sm:-left-24 md:-left-40 lg:left-36 -top-4 sm:-top-8 md:-top-12 lg:-top-16">
                       <img
                         src={sunEmoji}
                         alt="Sun"
-                        className="w-8 sm:w-24 sm:h-24 md:w-26 md:h-26 animate-rotate"
+                        className="w-10 sm:w-24 sm:h-24 md:w-26 md:h-26 animate-rotate"
                       />
                     </div>
                     <span className="relative">Find</span>
@@ -179,7 +179,7 @@ const Home = () => {
                     <img
                       src={sunglasses}
                       alt="Sunglasses"
-                      className="w-6 sm:w-16 sm:h-16 md:w-20 md:h-20 mr-1 sm:mr-3 md:mr-4"
+                      className="w-10 sm:w-16 sm:h-16 md:w-20 md:h-20 mr-1 sm:mr-3 md:mr-4"
                     />
                     <span>For</span>
                     <span className="text-plunge-yellow ml-1 sm:ml-4 md:ml-6 relative">
@@ -189,7 +189,7 @@ const Home = () => {
                         <img
                           src={chillout}
                           alt="Chill Out"
-                          className="w-16 sm:w-32 md:w-44 transform rotate-6 animate-float"
+                          className="w-20 sm:w-32 md:w-44 transform rotate-6 animate-float"
                         />
                       </div>
                     </span>
@@ -198,26 +198,26 @@ const Home = () => {
               </h1>
 
               {/* Decorative Elements */}
-              <div className="absolute right-2 sm:right-16 md:right-32 -top-2 sm:-top-6 md:-top-10">
+              <div className="absolute right-2 sm:right-16 md:right-32 -top-4 sm:-top-6 md:-top-10">
                 <img
                   src={hello}
                   alt="Hello"
-                  className="w-12 sm:w-32 md:w-40 animate-float"
+                  className="w-16 sm:w-32 md:w-40 animate-float"
                 />
               </div>
 
               {/* Stars */}
               <div className="absolute inset-0 pointer-events-none">
                 {/* Yellow Stars */}
-                <div className="absolute -top-4 sm:-top-12 md:-top-16 lg:-top-20 xl:-top-24">
-                  <Star className="w-3 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14" />
+                <div className="absolute -top-8 sm:-top-12 md:-top-16 lg:-top-20 xl:-top-24">
+                  <Star className="w-5 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14" />
                 </div>
                 <div className="absolute right-0 top-0">
                   <Star className="w-2 h-2 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8" />
                 </div>
-                <div className="absolute right-6 sm:right-24 md:right-30 lg:right-36 xl:right-40 top-20 sm:top-70 md:top-80 lg:top-96 xl:top-[30rem]">
-                  <Star className="w-3 h-3 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12" />
-                </div>
+                {/* <div className="absolute right-4 sm:right-24 md:right-30 lg:right-36 xl:right-40 top-32 sm:top-70 md:top-80 lg:top-96 xl:top-[30rem]">
+                  <Star className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12" />
+                </div> */}
 
                 {/* Orange Stars */}
                 <div className="absolute right-4 sm:-right-4 md:-right-8 lg:-right-12 xl:right-10 top-14 sm:top-14 md:top-20 lg:top-28 xl:top-22">
@@ -273,7 +273,7 @@ const Home = () => {
               </h2>
             </div>
             <p className="text-plunge-purple text-2xl sm:text-3xl md:text-4xl font-sans font-semibold leading-relaxed max-w-3xl mx-auto mt-4 sm:mt-7 md:mt-8 px-4">
-              Help you meet people for things you<br className="hidden sm:block" />
+              Help you meet people for things you <br className="hidden sm:block" />
               do in your real life.
             </p>
           </div>
@@ -350,7 +350,7 @@ const Home = () => {
         </div>
 
         <div className="container h-full">
-          <div className="flex flex-col md:flex-row items-start pt-6 sm:pt-8 md:pt-12 lg:pt-16 xl:pt-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+          <div className="flex flex-col md:flex-row items-start pt-9 sm:pt-8 md:pt-12 lg:pt-16 xl:pt-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
             {/* Left Side - Phone with Wireframes */}
             <div className="w-full md:w-1/2 relative flex justify-center md:justify-start mb-6 md:mb-0">
               {/* Star Decoration */}
