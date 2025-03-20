@@ -73,7 +73,7 @@ const Footer = () => {
               {/* Social Links */}
               <div className="flex gap-3 sm:gap-4 justify-center md:justify-end mb-4 sm:mb-6 md:mb-8 mt-4 sm:mt-6 md:mt-16">
                 {/* Instagram */}
-                <a href="https://www.instagram.com/plunge.ai/"
+                <a href="https://www.instagram.com/plunge.one/"
                   className="w-8 sm:w-9 md:w-10 h-8 sm:h-9 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#DFE742] hover:text-plunge-purple transition-all"
                   target="_blank"
                   rel="noopener noreferrer">

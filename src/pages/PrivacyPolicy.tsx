@@ -7,7 +7,6 @@ const PrivacyPolicy: React.FC = () => {
         <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Privacy Policy</h1>
       </header>
 
-
       <main className="p-8 bg-white mx-auto lg:my-10 max-w-4xl lg:rounded-lg shadow-md">
         <section className="mb-8">
           <p className="mb-4">
@@ -151,7 +150,21 @@ const PrivacyPolicy: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">11. How Can You Contact Us About This Notice?</h2>
+          <h2 className="text-2xl font-bold mb-4">11. Child Safety Standards</h2>
+          <p className="mb-4">We are committed to protecting the privacy and safety of children using our Services.</p>
+          <p className="mb-4">We take child safety seriously and comply with applicable child protection laws, including the Children's Online Privacy Protection Act (COPPA) and other relevant regulations. Our Services are not intended for children under the age of 18. We do not knowingly collect, solicit, or process personal data from children under 18. If we discover that we have inadvertently collected personal information from a child under 18, we will take immediate steps to delete such information from our records.</p>
+          <p className="mb-4">To further ensure child safety, we have implemented the following measures:</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Age Verification:</strong> We require users to confirm their age before using our Services.</li>
+            <li><strong>Restricted Access:</strong> Certain features may be restricted to prevent underage users from accessing them.</li>
+            <li><strong>Reporting & Moderation:</strong> We provide reporting tools and moderation mechanisms to flag inappropriate content and interactions.</li>
+            <li><strong>Parental Controls:</strong> We encourage parents and guardians to monitor their children's online activities and educate them about safe internet use.</li>
+          </ul>
+          <p className="mb-4">If you believe that a child under 18 has provided us with personal information, please contact us at <a href="mailto:nikhil@plunge.one" className="text-blue-600 hover:underline">nikhil@plunge.one</a> so we can take appropriate action.</p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-4">12. How Can You Contact Us About This Notice?</h2>
           <p className="mb-4">
             If you have questions or comments about this notice, you may email us at{' '}
             <a href="mailto:nikhil@plunge.one" className="text-blue-600 hover:underline">nikhil@plunge.one</a>
